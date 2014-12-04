@@ -5,6 +5,6 @@ var gulp = require('gulp');
 module.exports = function() {
   gulp.watch('client/app/*.js', ['browserify']);
   gulp.watch('client/app/*.scss', ['sass']);
-  gulp.watch('client/**/*.html', ['reload']);
+  gulp.watch('client/**/*', ['reload']);
 };
 
